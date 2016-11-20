@@ -4,16 +4,18 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Merriweather', serif;
 }
 
+.container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
 
-
-
-
-/* ================================= 
-  Base Element Styles
-==================================== */
-
+h2 {
+    font-size: 1.2rem;
+}
 
 
 
@@ -22,11 +24,161 @@
   Main Header
 ==================================== */
 
+.main-header {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
 
 
 
+/* ================================= 
+  Signup Info
+==================================== */
+
+.sign {
+    text-align: center;
+    margin: 30px auto;
+    padding-bottom: 40px;
+    border-bottom: 4px solid black;
+    
+}
+
+p {
+    padding: 0 30px;
+    font-size: .875rem;
+    color: #ccc;
+    font-weight: 300; 
+}
 
 
+/* ================================= 
+  Form
+==================================== */
+
+form {
+    border-top: 2px solid black;
+    padding-top: 25px;
+    margin-top: -28px;
+}
+legend {
+    font-size: 1.3rem;
+    font-weight: bold;  
+    padding-bottom: 10px;
+}
+
+fieldset {
+    border: 0;
+}
+
+.contact label, .contact input {
+    display: block;
+}
+
+label {
+    color: #009999;
+    font-size: .75rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.contact input, select {
+    width: 100%;
+    height: 40px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    border: none;
+}
+
+[placeholder] {
+    font-size: .7rem;
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+    color: #b3b3b3;
+}
+
+option {
+    font-size: .75rem;
+}
+
+:target {
+    border: 1px solid #009999;
+}
+
+select {
+    font-size: .75rem;
+    color: #8c8c8c;
+}
+
+#zip {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.border {
+    width: 100%;
+    padding-top: 30px;
+    border-top: 2px solid black;
+}
+
+.newsletter label {
+    margin: 10px;
+}
+
+textarea {
+    background: #f2f2f2;
+    width: 100%;
+    height: 80px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: #009999;
+    color: white;
+    border-radius: 5px;
+}
+
+.newsletter input, .newsletter label {
+    line-height: 2;
+}
+
+.newsletter label:nth-child(2),
+.newsletter label:nth-child(13),
+.newsletter label:nth-child(21)
+ {
+    margin-left: 0;
+}
+
+#javascript, 
+#plain_format {
+    margin-bottom: 15px;
+}
+
+#topics {
+    margin-top: 10px;
+}
+
+.newsletter input {
+    background: black;
+    border: none;
+}
+
+
+/* ================================= 
+ Footer
+==================================== */
+
+footer p {
+    font-size: .75rem;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
 
 /* ================================= 
  Media Queries
