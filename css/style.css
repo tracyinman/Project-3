@@ -8,7 +8,7 @@
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -93,7 +93,7 @@ label {
 }
 
 [placeholder] {
-    font-size: .7rem;
+    font-size: .55rem;
     font-style: italic;
     text-align: right;
     padding-right: 10px;
@@ -104,8 +104,9 @@ option {
     font-size: .75rem;
 }
 
-:target {
+input:focus {
     border: 1px solid #009999;
+    outline: none;
 }
 
 select {
@@ -146,10 +147,14 @@ button {
     line-height: 2;
 }
 
-.newsletter label:nth-child(2),
-.newsletter label:nth-child(13),
-.newsletter label:nth-child(21)
+.newsletter label:nth-of-type(1),
+.newsletter label:nth-of-type(5),
+.newsletter label:nth-of-type(8)
  {
+    margin-left: 0;
+}
+
+.clear label {
     margin-left: 0;
 }
 
@@ -158,14 +163,15 @@ button {
     margin-bottom: 15px;
 }
 
-#topics {
+#topics, #ideas {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.newsletter input {
-    background: black;
-    border: none;
+.clear [placeholder] {
+    text-align: left;
 }
+
 
 
 /* ================================= 
@@ -186,12 +192,70 @@ footer p {
 
 @media (min-width: 760px) {
 
+    .container {
+    width: 90%;
+}
+    .contact label {
+        width: 20%;
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 7px;
+    }  
+    
+    .contact input, select {
+        width: 80%;
+        float: left;
+        margin-bottom: 20px;
+}
+    
+    legend {
+        font-size: 1.1rem;
+    }
+    
 }
 
 
 @media (min-width: 1024px) {
     
+     .container {
+    width: 80%;
+    max-width: 1024px;
+}
+    .float {
+        width: 50%;
+        float: left;
+    }
      
+    .contact input, select {
+        width: 74%;
+        float: left;
+        margin-bottom: 20px;
+}
+    
+    .contact label {
+        font-size: .75rem;
+        width: 25%;
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 7px;
+        margin-right: 2px;
+    }  
+    
+     .contact div:nth-child(2) {
+        padding-right: 10px;
+    }
+    
+    .contact div:nth-child(3) {
+        padding-left: 10px;
+    }
+    
+    #topics {
+        clear: both;
+    }
+    
+    .clear {
+        clear:both;
+    }
 }
 
 
