@@ -259,6 +259,11 @@ footer p {
     .container {
     width: 90%;
 }
+    
+    .sign p {
+        font-size: 0.75em;
+    }
+
     .contact label {
         width: 20%;
         float: left;
